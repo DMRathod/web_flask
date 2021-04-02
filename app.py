@@ -66,7 +66,6 @@ def update():
  
         return redirect(url_for('Index'))
  
-#This route is for deleting our employee
 @app.route('/delete/<id>/', methods = ['GET', 'POST'])
 def delete(id):
     my_data = Student.query.get(id)
